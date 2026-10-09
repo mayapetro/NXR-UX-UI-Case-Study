@@ -7,7 +7,7 @@ A mobile app for renting snowmobiles and jet skis, designed for families and fir
 ## Live pages
 - [Case study](https://mayapetro.github.io/NXR-UX-UI-Case-Study/)
 - [Interactive prototype](https://mayapetro.github.io/NXR-UX-UI-Case-Study/prototype/)
-- [Second prototype (slides 21–41)](https://mayapetro.github.io/NXR-UX-UI-Case-Study/prototype-slides/)
+
 
 **Role:** [your role] · **Tools:** [your tools] · **Timeline:** [timeline]
 
