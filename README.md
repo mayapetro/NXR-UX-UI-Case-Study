@@ -5,9 +5,9 @@ A mobile app for renting snowmobiles and jet skis, designed for families and fir
 ![Booking flow](images/booking-flow.gif)
 
 ## Live pages
-- [Case study](https://mayapetro.github.io/NXR-UX-UI_Case_Study/)
-- [Interactive prototype](https://mayapetro.github.io/NXR-UX-UI_Case_Study/prototype/)
-- [Second prototype (slides 21–41)](https://mayapetro.github.io/NXR-UX-UI_Case_Study/prototype-slides/)
+- [Case study](https://mayapetro.github.io/NXR-UX-UI-Case-Study/)
+- [Interactive prototype](https://mayapetro.github.io/NXR-UX-UI-Case-Study/prototype/)
+- [Second prototype (slides 21–41)](https://mayapetro.github.io/NXR-UX-UI-Case-Study/prototype-slides/)
 
 **Role:** [your role] · **Tools:** [your tools] · **Timeline:** [timeline]
 
