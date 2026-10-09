@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>NXR – Prototype from slides 21–41</title>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--b:#6a8dbc;--n:#1b2f56;--c:#be2852;--m:#c05986;--p:#f38596;--bg:#eef2f8;--ink:#1d2640;--mut:#6a7390;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1730;--ink:#e8eefb;--mut:#9aa8c7}}
@@ -115,6 +115,45 @@ h1{margin:0 0 6px;font-size:1.9rem}.lede{color:var(--mut);max-width:48ch;margin:
 .live{width:9px;height:9px;border-radius:50%;background:var(--p);box-shadow:0 0 0 0 rgba(243,133,150,.7);animation:pl 1.6s infinite}@keyframes pl{to{box-shadow:0 0 0 10px rgba(243,133,150,0)}}
 .hz .stars{margin:10px 0 6px}.hz .stars button{font-size:44px;color:#6a8dbc}.hz .stars button.on{color:var(--p);text-shadow:0 0 14px rgba(243,133,150,.6)}
 .sp>svg{width:200px;height:200px;overflow:visible}.sub2{color:var(--mut);font-size:14px;font-weight:600;margin:6px 0 4px}.sp .rw{color:var(--n)}.sp .rw .ic{color:var(--b)}
+/* ===== gold luxe layer ===== */
+:root{--g:#c9a24a;--g2:#e9cf86;--gd:#9c7a2c;--gg:linear-gradient(135deg,#f1d98f 0%,#c9a24a 45%,#9c7a2c 100%)}
+h1,.t1,.co h2,.sp h2,.zl h2,.hz h2,.dt h2,.cr h2{font-family:"Playfair Display",Georgia,serif!important;letter-spacing:.01em}
+h1{position:relative;padding-bottom:10px}h1::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:3px;border-radius:2px;background:var(--gg)}
+.list button.on{background:var(--n);border-color:var(--g);box-shadow:0 0 0 1px var(--g) inset}.list button.on b{color:var(--g2)}
+.ph{border:7px solid transparent;background:linear-gradient(#fff,#fff) padding-box,var(--gg) border-box;box-shadow:0 22px 50px rgba(20,30,60,.35),0 0 0 1px rgba(156,122,44,.4)}
+.hd{border-bottom:1px solid rgba(201,162,74,.45)}
+.tb{border-top:2px solid var(--g)}.tb button.on{background:rgba(27,47,86,.35);color:#fff;box-shadow:inset 0 -3px 0 var(--g2)}.tb button.on .ic{color:var(--g2)}
+.t1::after,.co h2::after,.sp h2::after,.zl h2::after{content:"";display:block;width:56px;height:2px;margin:8px auto 0;background:var(--gg);border-radius:2px}
+.zl h2{text-align:center}
+.pb{background:var(--n)!important;color:#fff;border:1.5px solid var(--g);box-shadow:0 6px 16px rgba(27,47,86,.25),inset 0 0 0 1px rgba(233,207,134,.35);letter-spacing:.03em}
+.pb:active,.btn:active{transform:translateY(1px)}
+.chips button{border:1px solid rgba(201,162,74,.55)}.chips button.on{background:var(--n);border-color:var(--g)}
+.card{border:1px solid rgba(201,162,74,.35)}.card .t small{color:var(--gd)}
+.dt .st{color:var(--g)}
+.pill{background:var(--n);color:var(--g2);border:1.5px solid var(--g)}
+.cg .s{background:var(--n);color:var(--g2);box-shadow:0 0 0 2px var(--g)}.cg .r{background:rgba(201,162,74,.18)}.cg i{color:var(--gd)}
+.rg input::-webkit-slider-thumb{border:3px solid var(--g)}.rg input::-moz-range-thumb{border:3px solid var(--g)}.tk b{color:var(--gd)}
+.nr output{border-color:rgba(201,162,74,.6)}
+.ps .tt{border-bottom:2px solid rgba(201,162,74,.5)}.ps .tt span:last-child{color:var(--gd)}.ag input{accent-color:var(--g)}
+.co input:focus{border-color:var(--g)}.vs{border-color:var(--g)}
+.go{background:var(--n)!important;color:var(--g2)!important;box-shadow:0 0 0 2px var(--g),0 6px 14px rgba(0,0,0,.25)!important}
+.np .ln .ic{color:var(--g2)}.md button.on{background:rgba(201,162,74,.22);color:var(--g2)}.mt b{color:var(--g2)}.sel{border-color:var(--g)}
+.sp .rw .ic{color:var(--g)}.sp>svg circle[stroke="#6a8dbc"]{stroke:var(--g)}
+.zl .zr i{color:var(--g)}.zl .zr{border-left:3px solid transparent}.zl .zr.open{border-left-color:var(--g)}
+.hz .ey{color:var(--g2)}.hz .ft{color:var(--g2)}
+.hz .ey::before,.hz .ey::after{content:"";width:18px;height:1px;background:var(--g)}
+.bdg{background:linear-gradient(145deg,#2c467a,#1b2f56);box-shadow:0 0 0 3px var(--g),0 0 0 12px rgba(201,162,74,.14),0 0 40px rgba(233,207,134,.25)}
+.bdg svg{stroke:var(--g2)}
+.sum{border-color:rgba(201,162,74,.45);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03))}.sum .pk{color:var(--g2)}
+.btn.pri{background:var(--gg);color:var(--n);box-shadow:0 6px 18px rgba(201,162,74,.35)}
+.btn.sec{border-color:rgba(233,207,134,.6)}
+.btn.big2{background:var(--gg);color:var(--n);font-family:"Playfair Display",Georgia,serif;font-size:24px}
+.hz .stars button{color:rgba(233,207,134,.45)}.hz .stars button.on{color:var(--g2);text-shadow:0 0 14px rgba(233,207,134,.6)}
+.hz::before{background:radial-gradient(circle,rgba(233,207,134,.28),transparent 70%)}
+.live{background:var(--g2);animation-name:plg}@keyframes plg{0%{box-shadow:0 0 0 0 rgba(233,207,134,.7)}100%{box-shadow:0 0 0 10px rgba(233,207,134,0)}}
+.ts{border:1px solid var(--g)}
+.sheet h4{font-family:"Playfair Display",Georgia,serif;font-size:20px}.sheet h4::after{content:"";display:block;width:40px;height:2px;margin-top:6px;background:var(--gg)}
+.dw{border-right:2px solid var(--g)}.dw .f{background:var(--n)}.dw .f button{color:var(--g2)}
 </style></head><body>
 <div class="wrap"><main><h1>NXR prototype</h1><p class="lede">A click-through of your slides 21 to 41: browse, book, pay, find the shop, get help, and ride. Tap inside the phone, or jump to any slide.</p><div class="list" id="ls"></div></main>
 <div class="pcol"><div class="pw" id="pw"><div class="ph" id="ph"><div class="sb"><span>9:41</span><span>▂▄▆ ᯤ ▮</span></div><div id="hd"></div><div class="bd" id="bd"></div><div id="tb"></div><div class="scr" id="scr"></div><div class="sheet" id="sh"></div><div class="dw" id="dw"></div><div class="ts" id="ts"></div></div></div></div></div>
@@ -168,7 +207,7 @@ R.booking=()=>{const v=V[S.veh],c=calc();return{t:'booking',h:`<div class="t1">B
 R.pay=()=>{const c=calc(),p=S.pay;return{t:'booking',h:`<div class="co"><h2>Checkout</h2><div class="am">${money(c.tot)}</div><label>CARD NUMBER</label><div class="two"><input id="p-n" inputmode="numeric" value="${p.n}" aria-label="Card number"><div class="vs">VISA</div></div><label>CARDHOLDER NAME</label><input id="p-nm" value="${p.nm}" aria-label="Cardholder name"><div class="two"><div><label>EXPIRE DATE</label><input id="p-ex" value="${p.ex}" maxlength="5" style="width:150px" aria-label="Expiry"></div><div><label>CVV</label><input id="p-cv" value="${p.cv}" maxlength="4" style="width:100px" aria-label="CVV"></div></div><label class="sv"><input type="checkbox" id="p-sv" ${p.sv?'checked':''}> SAVE CARD</label><button class="pb" style="margin:26px auto 0" data-act="pay">Pay Secure</button></div>`}};
 R.success=()=>{const c=calc(),v=V[S.veh];return{t:'booking',dark:1,h:`<div class="hz"><div class="ey">Payment confirmed</div><div class="bdg"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9"/></svg></div><h2>Booking successful!</h2><div class="sum"><div><span>Vehicle</span><b>${v.n.split(' ').slice(0,3).join(' ')}</b></div><div><span>Date</span><b>${ds(S.d1)}</b></div><div><span>Time</span><b>${hf(S.sh)} – ${hf(S.eh)}</b></div><div><span>Total paid</span><b class="pk">${money(c.tot)}</b></div></div><div class="sub" style="margin-top:14px">Email confirmation?</div><div class="btns"><button class="btn sec" data-em="0">No</button><button class="btn pri" data-em="1">Yes</button></div><div class="ft">Ride safe!</div></div>`}};
 const ang=p=>p<=800?p/800*98:p<=1200?98+(p-800)/400*130:228+(p-1200)/600*94,xy=(a,r)=>[155+r*Math.sin(a*Math.PI/180),155-r*Math.cos(a*Math.PI/180)];
-R.rewards=()=>{const a=ang(Math.min(S.pts,1800)),[ex,ey]=xy(a,115),nx=[[800,'$20 off your next ride'],[1200,'a free helmet upgrade'],[1800,'a free half day']].find(t=>t[0]>S.pts);return{t:'booking',dark:1,h:`<div class="hz"><div class="ey">NXR Rewards</div><h2 style="margin-top:4px">You earned</h2><svg class="ring" viewBox="0 0 310 310"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f38596"/><stop offset="1" stop-color="#c05986"/></linearGradient></defs><circle cx="155" cy="155" r="115" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="26"/><path d="M155 40A115 115 0 ${a>180?1:0} 1 ${ex} ${ey}" fill="none" stroke="url(#rg)" stroke-width="26" stroke-linecap="round"/>${[800,1200,1800].map(p=>{const[x,y]=xy(ang(p),115),[lx,ly]=xy(ang(p),148);return`<circle cx="${x}" cy="${y}" r="8" fill="${S.pts>=p?'#fff':'#6a8dbc'}"/><text x="${lx}" y="${ly+5}" fill="#b8c6e0" font-size="15" font-weight="700" text-anchor="middle">${p}</text>`}).join('')}<text x="155" y="170" font-size="60" font-weight="800" fill="#fff" text-anchor="middle">${S.pts}</text><text x="155" y="198" font-size="16" font-weight="700" fill="#f38596" text-anchor="middle" letter-spacing="2">POINTS</text></svg><div class="sub">${nx?(nx[0]-S.pts)+' points to '+nx[1]:'You can redeem every reward'}</div><div class="sub" style="margin-top:14px;color:#fff;font-weight:800;font-size:18px">Choose a reward now?</div><div class="btns"><button class="btn sec" data-rw="0">Later</button><button class="btn pri" data-rw="1">Yes</button></div></div>`}};
+R.rewards=()=>{const a=ang(Math.min(S.pts,1800)),[ex,ey]=xy(a,115),nx=[[800,'$20 off your next ride'],[1200,'a free helmet upgrade'],[1800,'a free half day']].find(t=>t[0]>S.pts);return{t:'booking',dark:1,h:`<div class="hz"><div class="ey">NXR Rewards</div><h2 style="margin-top:4px">You earned</h2><svg class="ring" viewBox="0 0 310 310"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1d98f"/><stop offset="1" stop-color="#9c7a2c"/></linearGradient></defs><circle cx="155" cy="155" r="115" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="26"/><path d="M155 40A115 115 0 ${a>180?1:0} 1 ${ex} ${ey}" fill="none" stroke="url(#rg)" stroke-width="26" stroke-linecap="round"/>${[800,1200,1800].map(p=>{const[x,y]=xy(ang(p),115),[lx,ly]=xy(ang(p),148);return`<circle cx="${x}" cy="${y}" r="8" fill="${S.pts>=p?'#e9cf86':'#6a8dbc'}"/><text x="${lx}" y="${ly+5}" fill="#b8c6e0" font-size="15" font-weight="700" text-anchor="middle">${p}</text>`}).join('')}<text x="155" y="170" font-size="60" font-weight="800" fill="#fff" text-anchor="middle">${S.pts}</text><text x="155" y="198" font-size="16" font-weight="700" fill="#e9cf86" text-anchor="middle" letter-spacing="2">POINTS</text></svg><div class="sub">${nx?(nx[0]-S.pts)+' points to '+nx[1]:'You can redeem every reward'}</div><div class="sub" style="margin-top:14px;color:#fff;font-weight:800;font-size:18px">Choose a reward now?</div><div class="btns"><button class="btn sec" data-rw="0">Later</button><button class="btn pri" data-rw="1">Yes</button></div></div>`}};
 const MODES=[['car','Car',75],['tram','Transit',130],['walk','Walk',390],['bike','Bike',115],['plane','Fly',35]],fmt=m=>m>=60?(Math.round(m/6)/10)+' hrs':Math.round(m)+' min';
 R.location=()=>{const m=MODES.find(x=>x[0]===S.pm),k=+S.org,eta=(m[2]*k+ +S.dep*60),ee=Math.floor(eta/60)+'.'+String(Math.round(eta%60)).padStart(2,'0')+(eta<720?'am':'pm');
  if(S.ls===1)return{t:'support',h:`<div class="ma" style="height:216px;filter:brightness(.9)">${map(0)}</div><div class="np" style="height:calc(100% - 216px)"></div>`,ld:1};

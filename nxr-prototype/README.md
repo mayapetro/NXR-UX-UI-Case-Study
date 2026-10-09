@@ -34,6 +34,6 @@ The prototype is a single self-contained `index.html` (images embedded), with no
 
 ## Design
 
-- **Palette:** navy `#1b2f56`, blue `#6a8dbc`, crimson `#be2852`, magenta `#c05986`, pink `#f38596`
-- **Typeface:** Mulish (Google Fonts)
+- **Palette:** navy `#1b2f56`, blue `#6a8dbc`, crimson `#be2852`, magenta `#c05986`, pink `#f38596`, gold accents `#c9a24a` / `#e9cf86`
+- **Typefaces:** Playfair Display for titles, Mulish for body text (Google Fonts)
 - Light screens for browsing and booking; navy confirmation screens (Success, Rewards, Start, Return, Trip) share one layout so the flow reads as one continuous story.
